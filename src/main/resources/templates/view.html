@@ -1,0 +1,16 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${title}"></title>
+</head>
+<body>
+<h1 th:text="${messages}"></h1>
+<ul>
+    <li th:text="'Nombre: ' + ${user.getName()}"></li>
+    <li th:text="'Apellido: ' + ${user.getLastname()}"></li>
+    <li th:text="'Creado en: ' + ${user.getCreatedAt()}"></li>
+</ul>
+</body>
+</html>
